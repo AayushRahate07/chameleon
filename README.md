@@ -1,10 +1,10 @@
 # How Far Are KV-Cache Eviction Policies from the Offline Optimum?
 
-**Design & Analysis of Algorithms project** — model: Qwen2.5-0.5B
+model: Qwen2.5-0.5B
 
 ## Overview
 
-LLMs with long contexts bottleneck on KV-cache memory. Existing eviction policies
+LLMs with long contexts are bottlenecked by KV-cache memory. Existing eviction policies
 (H2O, TOVA, LRU) hard-code a fixed mix of signals, but no single signal dominates
 across all text types. This project:
 
@@ -71,8 +71,6 @@ the model-related cells can be skipped.
 2. Set `PRESET = "quick"` for a fast sanity run, `"full"` for the complete battery
 3. Run all cells sequentially
 
-The notebook imports from `src/` — no `%%writefile` magic needed.
-
 ## Modules
 
 | Module | What it does |
@@ -82,11 +80,3 @@ The notebook imports from `src/` — no `%%writefile` magic needed.
 | `src/imitation.py` | Imitation learning scorer, DAgger training, feature extraction |
 | `src/chameleon.py` | Chameleon (Fixed-Share Hedge ensemble), LastAttention baseline |
 | `src/gauntlet.py` | Gauntlet test battery: scoreboard, adversary, stress traces, ablations, verdict |
-
-## Citation
-
-If you use this code, please cite the project report.
-
-## License
-
-Academic use only — course project.
