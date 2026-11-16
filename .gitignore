@@ -1,0 +1,35 @@
+# Outputs (regenerated from notebook)
+outputs/
+results/
+
+# Cached attention data
+data/attention/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Legacy writefile outputs (now in src/)
+kv_core.py
+kv_model.py
+kv_imitation.py
+kv_chameleon.py
+kv_gauntlet.py
+
+# Archives
+*.zip
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

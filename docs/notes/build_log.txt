@@ -1,0 +1,44 @@
+I'll start by reading both notebooks so the new hybrid plugs into your existing code.
+
+Status: the mock run passes for every cell that doesn't need the model. I'm rebuilding the final notebook with the cache fix and copying the files to outputs.
+
+I've built a new hybrid called **Chameleon** and one test battery (the **Gauntlet**) that every hybrid goes through. I could not run any of it on Qwen here, so there are no real-attention numbers yet. On synthetic data Chameleon did not win, and that is the main thing to know before you send this to Aqibe.
+
+I added the new cells to your DAgger notebook (`kv_cache_eviction_final.ipynb`, section 10e, before section 11). The two `.py` files are the same code in case Aqibe runs it on the server without Colab.
+
+## Chameleon
+It learns the mix of eviction signals while it runs, instead of hard-coding it the way H2O (50/50) and Hybrid do.
+- It keeps five experts, each a classic rule: recency (LRU), cumulative attention (H2O), last-step attention (TOVA), slow-EMA attention (persistence), and hit-rate (LFU).
+- Every step it scores each expert on the attention that just arrived, and re-weights them with Fixed-Share Hedge, so the mix can switch when the text type changes.
+- It evicts the token with the lowest weighted rank.
+- It needs no training and no teacher, so it cannot leak test data. That is its main difference from Imitation and DAgger.
+
+**What the guarantee covers.** The expert weights have a provable regret bound against the best single expert, even when the losses depend on our own evictions. That bound is on a surrogate loss (ranking quality on observed attention), not on the competitive ratio. Don't claim a competitive-ratio guarantee in the viva. The notebook checks the bound on every run.
+
+## The Gauntlet
+Every policy is wrapped in a `Spec` and goes through the identical tests. Learned policies train only on the other text types, and only odd-numbered sequences are used for reporting. The tests are:
+- **Self-tests:** the optimum matches brute force, no policy beats the optimum, and no policy peeks at the future (future rows are scrambled and past decisions must not change).
+- **Scoreboard:** competitive ratio on unseen budgets, with confidence intervals, worst text, pairwise win-rates and Holm-corrected Wilcoxon tests.
+- **Distribution shift:** real attention on spliced sequences (wiki → code → dialogue), which tests whether a policy adapts mid-sequence.
+- **Adversary:** a hill-climb that searches for the input that hurts each policy most.
+- **Stress traces:** your existing five attention patterns, run for every policy.
+- **Real decoding:** perplexity and needle retrieval for every policy, then whether attention-retained ranks the policies the way perplexity does.
+- **Ablations:** which part of Chameleon matters.
+- **Overhead:** time and memory per decision.
+
+A decision rule is fixed in `verdict()` before any run. A policy only wins if the paired confidence interval on its lead over the runner-up excludes 0, otherwise it is reported as a tie.
+
+## What I verified here
+I had no model, no torch and no ortools. The data below is synthetic attention I built, and the exact optimum came from an LP solver I added as a fallback. It matched brute force on small cases. I ran every cell that doesn't need the model, and the model cells compile but are untested.
+
+On the synthetic data, Chameleon landed mid-pack, behind the new LastAttention baseline and the Imitation/DAgger students, and ahead of H2O and Hybrid. In the adversary test the DAgger and Imitation students held up best. Two findings are worth knowing:
+- **LastAttention is strong.** This TOVA-style rule (evict the token with the least recent attention) beat Chameleon on synthetic data. Chameleon's pool contains LastAttention, and the weights did converge to it, so Chameleon cannot beat it there and can only match it at best. If the server shows the same thing, the finding is that a simple rule ties the adaptive ensemble.
+- **Sink protection is the big switch.** Removing it was the largest single effect in the ablation (+0.036, significant), but real attention has much heavier sinks than my synthetic data, so don't read anything into the direction yet. The server run will tell you.
+
+Chameleon is also slower per decision (about 290 µs in Python versus 5–22 µs for the others). Its settings come from theory and a synthetic dev set, never from your real test sequences.
+
+## For the server run on the 15th/16th
+- The notebook needs sections 10c.0 and 10c.1 run first (`A_BIG`, `OPT_BIG`), plus section 9 for the needle test.
+- Set `PRESET = "full"`, and `RUN_LONG = True` to add a 2T-length test.
+- Make sure ortools installs. At 2T tokens the LP fallback is too slow.
+- Raising `n_seq` in `CFG` (the number of sequences per text type) gives more test sequences and narrower confidence intervals.
