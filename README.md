@@ -1,18 +1,9 @@
 <div align="center">
 
-<<<<<<< HEAD
-model: Qwen2.5-0.5B
-=======
 # CHAMELEON
->>>>>>> 0d9d883 (refactoring)
 
 ### Online KV-Cache Eviction, Exact Min-Cost Flow Optimum & The Gauntlet Evaluation Suite
 
-<<<<<<< HEAD
-LLMs with long contexts are bottlenecked by KV-cache memory. Existing eviction policies
-(H2O, TOVA, LRU) hard-code a fixed mix of signals, but no single signal dominates
-across all text types. This project:
-=======
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.x-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![Transformers](https://img.shields.io/badge/Transformers-4.46.3-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/docs/transformers/)
@@ -20,7 +11,6 @@ across all text types. This project:
 [![NumPy](https://img.shields.io/badge/NumPy%20%7C%20SciPy-Scientific-013243?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org/)
 [![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Imitation%20%7C%20DAgger-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
 [![Model](https://img.shields.io/badge/Model-Qwen2.5--0.5B-6C5CE7?style=for-the-badge)](https://huggingface.co/Qwen/Qwen2.5-0.5B)
->>>>>>> 0d9d883 (refactoring)
 
 [Experiment Notebook](notebooks/kv_bench.ipynb)   •   [Research Paper](docs/paper/kv_cache_eviction_paper.pdf)   •   [Study Guide](docs/paper/study_guide.pdf)   •   [Results](#6-empirical-results--the-gauntlet-scorecard)
 
@@ -164,7 +154,7 @@ flowchart TD
 
 ## 4. Key Scientific Findings & Edge-Case Insights
 
-Running the full 15-policy Gauntlet on real **Qwen2.5-0.5B** attention and physically pruned caches revealed five sharp, viva-critical findings:
+Running the full 15-policy Gauntlet on real **Qwen2.5-0.5B** attention and physically pruned caches revealed five sharp findings:
 
 ```mermaid
 stateDiagram-v2
@@ -318,7 +308,6 @@ Figures Exported       : 4 publication plots in outputs/figures/
 ### 1. Installation
 
 ```bash
-# Install pinned dependencies
 pip install -r requirements.txt
 ```
 
@@ -376,19 +365,7 @@ kvcache/
 
 <div align="center">
 
-<<<<<<< HEAD
-## Modules
-
-| Module | What it does |
-|--------|-------------|
-| `src/core.py` | Policy base class, 6 online policies, Belady oracle, exact optimum (min-cost flow), simulator |
-| `src/model.py` | Full-cache attention extraction, token-by-token decoding with physical cache pruning |
-| `src/imitation.py` | Imitation learning scorer, DAgger training, feature extraction |
-| `src/chameleon.py` | Chameleon (Fixed-Share Hedge ensemble), LastAttention baseline |
-| `src/gauntlet.py` | Gauntlet test battery: scoreboard, adversary, stress traces, ablations, verdict |
-=======
 ### CHAMELEON | AAYUSH RAHATE
 *Design & Analysis of Algorithms — Online KV-Cache Eviction & Exact Offline Optima*
 
 </div>
->>>>>>> 0d9d883 (refactoring)
