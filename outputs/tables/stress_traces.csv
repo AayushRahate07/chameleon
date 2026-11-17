@@ -1,0 +1,271 @@
+trace,budget,seed,policy,family,ratio
+pure recency,0.1,0,Random,online,0.860919603187534
+pure recency,0.1,0,SlidingWindow,online,0.9999951055157342
+pure recency,0.1,0,StreamingLLM,online,0.9966986031478717
+pure recency,0.1,0,HeavyHitter-only,online,0.24017650028181756
+pure recency,0.1,0,H2O,online,0.9545276363613414
+pure recency,0.1,0,Hybrid,online,0.7949483957939455
+pure recency,0.1,0,LastAttention,online,0.9999786552061134
+pure recency,0.1,0,Chameleon,online,0.9966780675375319
+pure recency,0.1,0,HitLRU,online,0.9966866160533034
+pure recency,0.1,0,AdaptiveWindow,online,0.9966866160533034
+pure recency,0.1,0,HARP,online,0.8273525033682382
+pure recency,0.1,0,Imitation,learned,0.9995677018413611
+pure recency,0.1,0,DAgger,learned,0.998532309244384
+pure recency,0.1,0,Belady-Greedy (offline),offline,0.9999951055157342
+pure recency,0.1,0,Optimal (offline),offline,1.0
+pure recency,0.2,0,Random,online,0.9230198426324575
+pure recency,0.2,0,SlidingWindow,online,1.000000093468467
+pure recency,0.2,0,StreamingLLM,online,0.9999951639404506
+pure recency,0.2,0,HeavyHitter-only,online,0.2753414903741919
+pure recency,0.2,0,H2O,online,0.9984886541036949
+pure recency,0.2,0,Hybrid,online,0.9608236492903341
+pure recency,0.2,0,LastAttention,online,1.0000000683157546
+pure recency,0.2,0,Chameleon,online,0.9999949317839228
+pure recency,0.2,0,HitLRU,online,0.9999951362995181
+pure recency,0.2,0,AdaptiveWindow,online,0.9999951362995181
+pure recency,0.2,0,HARP,online,0.9607936792845756
+pure recency,0.2,0,Imitation,learned,0.9934548676980169
+pure recency,0.2,0,DAgger,learned,0.9922459884917095
+pure recency,0.2,0,Belady-Greedy (offline),offline,1.0000000936377782
+pure recency,0.2,0,Optimal (offline),offline,1.0
+pure recency,0.3,0,Random,online,0.9546895853902035
+pure recency,0.3,0,SlidingWindow,online,1.0000002700324675
+pure recency,0.3,0,StreamingLLM,online,1.0000002606105052
+pure recency,0.3,0,HeavyHitter-only,online,0.2965911335315358
+pure recency,0.3,0,H2O,online,0.9999496360686305
+pure recency,0.3,0,Hybrid,online,0.9946874237239172
+pure recency,0.3,0,LastAttention,online,1.0000002699840866
+pure recency,0.3,0,Chameleon,online,1.0000002598581537
+pure recency,0.3,0,HitLRU,online,1.0000002605785698
+pure recency,0.3,0,AdaptiveWindow,online,1.0000002605785698
+pure recency,0.3,0,HARP,online,0.9758355260258881
+pure recency,0.3,0,Imitation,learned,0.9931633124728085
+pure recency,0.3,0,DAgger,learned,0.9945115901949654
+pure recency,0.3,0,Belady-Greedy (offline),offline,1.0000002700324675
+pure recency,0.3,0,Optimal (offline),offline,1.0
+sinks + recency,0.1,0,Random,online,0.20787518599989896
+sinks + recency,0.1,0,SlidingWindow,online,0.2055046352056727
+sinks + recency,0.1,0,StreamingLLM,online,0.9999958098995079
+sinks + recency,0.1,0,HeavyHitter-only,online,0.8471777226370527
+sinks + recency,0.1,0,H2O,online,0.9913491788666757
+sinks + recency,0.1,0,Hybrid,online,0.9570992305666622
+sinks + recency,0.1,0,LastAttention,online,0.9999879380450583
+sinks + recency,0.1,0,Chameleon,online,0.9999853228185506
+sinks + recency,0.1,0,HitLRU,online,0.9999958098995079
+sinks + recency,0.1,0,AdaptiveWindow,online,0.9999958098995079
+sinks + recency,0.1,0,HARP,online,0.9572780568803768
+sinks + recency,0.1,0,Imitation,learned,0.9999958098995079
+sinks + recency,0.1,0,DAgger,learned,0.9999958935328633
+sinks + recency,0.1,0,Belady-Greedy (offline),offline,0.9999958093540946
+sinks + recency,0.1,0,Optimal (offline),offline,1.0
+sinks + recency,0.2,0,Random,online,0.2595744464239417
+sinks + recency,0.2,0,SlidingWindow,online,0.206266811138604
+sinks + recency,0.2,0,StreamingLLM,online,1.0000001232909346
+sinks + recency,0.2,0,HeavyHitter-only,online,0.846407707764642
+sinks + recency,0.2,0,H2O,online,0.9996926401825439
+sinks + recency,0.2,0,Hybrid,online,0.9916492621021504
+sinks + recency,0.2,0,LastAttention,online,1.000000108214318
+sinks + recency,0.2,0,Chameleon,online,0.9999999513406094
+sinks + recency,0.2,0,HitLRU,online,1.0000001232909346
+sinks + recency,0.2,0,AdaptiveWindow,online,1.0000001232909346
+sinks + recency,0.2,0,HARP,online,0.9898456341338632
+sinks + recency,0.2,0,Imitation,learned,1.0000001229246713
+sinks + recency,0.2,0,DAgger,learned,1.0000001157730092
+sinks + recency,0.2,0,Belady-Greedy (offline),offline,1.0000001232909346
+sinks + recency,0.2,0,Optimal (offline),offline,1.0
+sinks + recency,0.3,0,Random,online,0.2770006084725058
+sinks + recency,0.3,0,SlidingWindow,online,0.20741216285156797
+sinks + recency,0.3,0,StreamingLLM,online,1.0000002390999372
+sinks + recency,0.3,0,HeavyHitter-only,online,0.8470440450269194
+sinks + recency,0.3,0,H2O,online,0.9999894676517235
+sinks + recency,0.3,0,Hybrid,online,0.9988995377925619
+sinks + recency,0.3,0,LastAttention,online,1.0000002390806368
+sinks + recency,0.3,0,Chameleon,online,1.000000238657289
+sinks + recency,0.3,0,HitLRU,online,1.000000239089372
+sinks + recency,0.3,0,AdaptiveWindow,online,1.000000239089372
+sinks + recency,0.3,0,HARP,online,0.9932078123654844
+sinks + recency,0.3,0,Imitation,learned,1.0000002390933203
+sinks + recency,0.3,0,DAgger,learned,1.0000002390714755
+sinks + recency,0.3,0,Belady-Greedy (offline),offline,1.0000002390999372
+sinks + recency,0.3,0,Optimal (offline),offline,1.0
+periodic re-reads,0.1,0,Random,online,0.8163179961148532
+periodic re-reads,0.1,0,SlidingWindow,online,0.9425413423744543
+periodic re-reads,0.1,0,StreamingLLM,online,0.9372614892423322
+periodic re-reads,0.1,0,HeavyHitter-only,online,0.2614054961425006
+periodic re-reads,0.1,0,H2O,online,0.8998445609337712
+periodic re-reads,0.1,0,Hybrid,online,0.7512737475709055
+periodic re-reads,0.1,0,LastAttention,online,0.9425277160766348
+periodic re-reads,0.1,0,Chameleon,online,0.9393051075671761
+periodic re-reads,0.1,0,HitLRU,online,0.9392662766556983
+periodic re-reads,0.1,0,AdaptiveWindow,online,0.9392662766556983
+periodic re-reads,0.1,0,HARP,online,0.7945984470749218
+periodic re-reads,0.1,0,Imitation,learned,0.9818327158632165
+periodic re-reads,0.1,0,DAgger,learned,0.9714106623383283
+periodic re-reads,0.1,0,Belady-Greedy (offline),offline,0.9999905432559603
+periodic re-reads,0.1,0,Optimal (offline),offline,1.0
+periodic re-reads,0.2,0,Random,online,0.8800484611872051
+periodic re-reads,0.2,0,SlidingWindow,online,0.9542803558644664
+periodic re-reads,0.2,0,StreamingLLM,online,0.951954656128006
+periodic re-reads,0.2,0,HeavyHitter-only,online,0.3475510597181799
+periodic re-reads,0.2,0,H2O,online,0.9853544664765114
+periodic re-reads,0.2,0,Hybrid,online,0.9379338289224524
+periodic re-reads,0.2,0,LastAttention,online,0.9542803414888184
+periodic re-reads,0.2,0,Chameleon,online,0.9904061658139742
+periodic re-reads,0.2,0,HitLRU,online,0.9999896163546573
+periodic re-reads,0.2,0,AdaptiveWindow,online,0.9999896163546573
+periodic re-reads,0.2,0,HARP,online,0.9301967160031087
+periodic re-reads,0.2,0,Imitation,learned,0.9837162747757496
+periodic re-reads,0.2,0,DAgger,learned,0.9915074202286646
+periodic re-reads,0.2,0,Belady-Greedy (offline),offline,1.0000000952716033
+periodic re-reads,0.2,0,Optimal (offline),offline,1.0
+periodic re-reads,0.3,0,Random,online,0.9167386987100868
+periodic re-reads,0.3,0,SlidingWindow,online,0.9602109288157455
+periodic re-reads,0.3,0,StreamingLLM,online,0.9602109200641428
+periodic re-reads,0.3,0,HeavyHitter-only,online,0.3820914257039662
+periodic re-reads,0.3,0,H2O,online,0.999952810592248
+periodic re-reads,0.3,0,Hybrid,online,0.984946586024171
+periodic re-reads,0.3,0,LastAttention,online,0.9602109287653413
+periodic re-reads,0.3,0,Chameleon,online,1.000000257325765
+periodic re-reads,0.3,0,HitLRU,online,1.0000002587237826
+periodic re-reads,0.3,0,AdaptiveWindow,online,1.0000002587237826
+periodic re-reads,0.3,0,HARP,online,0.978339506193389
+periodic re-reads,0.3,0,Imitation,learned,0.9445804102291024
+periodic re-reads,0.3,0,DAgger,learned,0.970213787157844
+periodic re-reads,0.3,0,Belady-Greedy (offline),offline,1.0000002771439929
+periodic re-reads,0.3,0,Optimal (offline),offline,1.0
+sudden topic change,0.1,0,Random,online,0.5503180190853871
+sudden topic change,0.1,0,SlidingWindow,online,0.590676741433893
+sudden topic change,0.1,0,StreamingLLM,online,0.579401840521381
+sudden topic change,0.1,0,HeavyHitter-only,online,0.3492120792987667
+sudden topic change,0.1,0,H2O,online,0.6264121228097583
+sudden topic change,0.1,0,Hybrid,online,0.572793474726958
+sudden topic change,0.1,0,LastAttention,online,0.7722894184865864
+sudden topic change,0.1,0,Chameleon,online,0.6977143339627907
+sudden topic change,0.1,0,HitLRU,online,0.5797280150959234
+sudden topic change,0.1,0,AdaptiveWindow,online,0.5797280150959234
+sudden topic change,0.1,0,HARP,online,0.6471905476816632
+sudden topic change,0.1,0,Imitation,learned,0.7572106556684479
+sudden topic change,0.1,0,DAgger,learned,0.7683570807279232
+sudden topic change,0.1,0,Belady-Greedy (offline),offline,0.9926717097374078
+sudden topic change,0.1,0,Optimal (offline),offline,1.0
+sudden topic change,0.2,0,Random,online,0.6475416339621903
+sudden topic change,0.2,0,SlidingWindow,online,0.5867790893953398
+sudden topic change,0.2,0,StreamingLLM,online,0.5673361444623994
+sudden topic change,0.2,0,HeavyHitter-only,online,0.35559335639284706
+sudden topic change,0.2,0,H2O,online,0.685749350737183
+sudden topic change,0.2,0,Hybrid,online,0.7263813366002805
+sudden topic change,0.2,0,LastAttention,online,0.88294958045124
+sudden topic change,0.2,0,Chameleon,online,0.8043604943035689
+sudden topic change,0.2,0,HitLRU,online,0.802537287366388
+sudden topic change,0.2,0,AdaptiveWindow,online,0.80254910339936
+sudden topic change,0.2,0,HARP,online,0.7565784547153084
+sudden topic change,0.2,0,Imitation,learned,0.9194224851233928
+sudden topic change,0.2,0,DAgger,learned,0.8622528255427632
+sudden topic change,0.2,0,Belady-Greedy (offline),offline,0.9999993367902839
+sudden topic change,0.2,0,Optimal (offline),offline,1.0
+sudden topic change,0.3,0,Random,online,0.6882588847674633
+sudden topic change,0.3,0,SlidingWindow,online,0.6676899107002084
+sudden topic change,0.3,0,StreamingLLM,online,0.6453665527864416
+sudden topic change,0.3,0,HeavyHitter-only,online,0.35290878429152794
+sudden topic change,0.3,0,H2O,online,0.9355160388132681
+sudden topic change,0.3,0,Hybrid,online,0.8421308352635526
+sudden topic change,0.3,0,LastAttention,online,1.000000193359004
+sudden topic change,0.3,0,Chameleon,online,0.9999932041608622
+sudden topic change,0.3,0,HitLRU,online,0.9999978714004624
+sudden topic change,0.3,0,AdaptiveWindow,online,0.9999993515555836
+sudden topic change,0.3,0,HARP,online,0.8731241360160332
+sudden topic change,0.3,0,Imitation,learned,0.6392669728368365
+sudden topic change,0.3,0,DAgger,learned,0.7527683075718847
+sudden topic change,0.3,0,Belady-Greedy (offline),offline,1.0000001952843094
+sudden topic change,0.3,0,Optimal (offline),offline,1.0
+unpredictable late burst,0.1,0,Random,online,0.8241017485714668
+unpredictable late burst,0.1,0,SlidingWindow,online,0.9604320784657934
+unpredictable late burst,0.1,0,StreamingLLM,online,0.957289193152097
+unpredictable late burst,0.1,0,HeavyHitter-only,online,0.22815112916969849
+unpredictable late burst,0.1,0,H2O,online,0.9170583255542908
+unpredictable late burst,0.1,0,Hybrid,online,0.7625845966176984
+unpredictable late burst,0.1,0,LastAttention,online,0.960417313812979
+unpredictable late burst,0.1,0,Chameleon,online,0.9572464948948358
+unpredictable late burst,0.1,0,HitLRU,online,0.9572696718022631
+unpredictable late burst,0.1,0,AdaptiveWindow,online,0.9572696718022631
+unpredictable late burst,0.1,0,HARP,online,0.788583406000748
+unpredictable late burst,0.1,0,Imitation,learned,0.9598611744615857
+unpredictable late burst,0.1,0,DAgger,learned,0.958727095894797
+unpredictable late burst,0.1,0,Belady-Greedy (offline),offline,0.99998457165668
+unpredictable late burst,0.1,0,Optimal (offline),offline,1.0
+unpredictable late burst,0.2,0,Random,online,0.8823917991449978
+unpredictable late burst,0.2,0,SlidingWindow,online,0.9531215692742168
+unpredictable late burst,0.2,0,StreamingLLM,online,0.953116893826327
+unpredictable late burst,0.2,0,HeavyHitter-only,online,0.28067483144213223
+unpredictable late burst,0.2,0,H2O,online,0.9516461790443541
+unpredictable late burst,0.2,0,Hybrid,online,0.9265948090265909
+unpredictable late burst,0.2,0,LastAttention,online,0.953121551280158
+unpredictable late burst,0.2,0,Chameleon,online,0.9531167531366231
+unpredictable late burst,0.2,0,HitLRU,online,0.9531168720879695
+unpredictable late burst,0.2,0,AdaptiveWindow,online,0.9531168720879695
+unpredictable late burst,0.2,0,HARP,online,0.9153746209852011
+unpredictable late burst,0.2,0,Imitation,learned,0.9467907357704024
+unpredictable late burst,0.2,0,DAgger,learned,0.945388835892491
+unpredictable late burst,0.2,0,Belady-Greedy (offline),offline,1.0000001021051257
+unpredictable late burst,0.2,0,Optimal (offline),offline,1.0
+unpredictable late burst,0.3,0,Random,online,0.9038863614209374
+unpredictable late burst,0.3,0,SlidingWindow,online,0.9466075258781559
+unpredictable late burst,0.3,0,StreamingLLM,online,0.9466075169629558
+unpredictable late burst,0.3,0,HeavyHitter-only,online,0.33297258593849527
+unpredictable late burst,0.3,0,H2O,online,0.9465569865410772
+unpredictable late burst,0.3,0,Hybrid,online,0.9538314584645541
+unpredictable late burst,0.3,0,LastAttention,online,0.9466075258448627
+unpredictable late burst,0.3,0,Chameleon,online,0.9466075161299711
+unpredictable late burst,0.3,0,HitLRU,online,0.9466075169363205
+unpredictable late burst,0.3,0,AdaptiveWindow,online,0.9466075169363205
+unpredictable late burst,0.3,0,HARP,online,0.9239633065804703
+unpredictable late burst,0.3,0,Imitation,learned,0.9535340679577565
+unpredictable late burst,0.3,0,DAgger,learned,0.9814035066106911
+unpredictable late burst,0.3,0,Belady-Greedy (offline),offline,1.0000002041656615
+unpredictable late burst,0.3,0,Optimal (offline),offline,1.0
+shifting heavy hitters,0.1,0,Random,online,0.5470561945526116
+shifting heavy hitters,0.1,0,SlidingWindow,online,0.5700802969380219
+shifting heavy hitters,0.1,0,StreamingLLM,online,0.48863808787317287
+shifting heavy hitters,0.1,0,HeavyHitter-only,online,0.47628237136350354
+shifting heavy hitters,0.1,0,H2O,online,0.7199455891911546
+shifting heavy hitters,0.1,0,Hybrid,online,0.6971016570644911
+shifting heavy hitters,0.1,0,LastAttention,online,0.9638576733003644
+shifting heavy hitters,0.1,0,Chameleon,online,0.8928473362075178
+shifting heavy hitters,0.1,0,HitLRU,online,0.9135656338379653
+shifting heavy hitters,0.1,0,AdaptiveWindow,online,0.7803817530513909
+shifting heavy hitters,0.1,0,HARP,online,0.7828636188505307
+shifting heavy hitters,0.1,0,Imitation,learned,0.9724103826412368
+shifting heavy hitters,0.1,0,DAgger,learned,0.9624660607901352
+shifting heavy hitters,0.1,0,Belady-Greedy (offline),offline,0.9828273037633544
+shifting heavy hitters,0.1,0,Optimal (offline),offline,1.0
+shifting heavy hitters,0.2,0,Random,online,0.7528366910925152
+shifting heavy hitters,0.2,0,SlidingWindow,online,0.7565553579146789
+shifting heavy hitters,0.2,0,StreamingLLM,online,0.7140835188580287
+shifting heavy hitters,0.2,0,HeavyHitter-only,online,0.41160223293629966
+shifting heavy hitters,0.2,0,H2O,online,0.886963825514964
+shifting heavy hitters,0.2,0,Hybrid,online,0.7673458918960031
+shifting heavy hitters,0.2,0,LastAttention,online,0.9733211096777343
+shifting heavy hitters,0.2,0,Chameleon,online,0.9339826206415985
+shifting heavy hitters,0.2,0,HitLRU,online,0.9634423472666693
+shifting heavy hitters,0.2,0,AdaptiveWindow,online,0.9638527336937501
+shifting heavy hitters,0.2,0,HARP,online,0.7680198771987056
+shifting heavy hitters,0.2,0,Imitation,learned,0.9257069914073655
+shifting heavy hitters,0.2,0,DAgger,learned,0.917511622483489
+shifting heavy hitters,0.2,0,Belady-Greedy (offline),offline,0.9924594098830399
+shifting heavy hitters,0.2,0,Optimal (offline),offline,1.0
+shifting heavy hitters,0.3,0,Random,online,0.7053266238459925
+shifting heavy hitters,0.3,0,SlidingWindow,online,0.8709554686223293
+shifting heavy hitters,0.3,0,StreamingLLM,online,0.8447274508252423
+shifting heavy hitters,0.3,0,HeavyHitter-only,online,0.4198209785303552
+shifting heavy hitters,0.3,0,H2O,online,0.9072061191674469
+shifting heavy hitters,0.3,0,Hybrid,online,0.7883366331317513
+shifting heavy hitters,0.3,0,LastAttention,online,0.9898136076119718
+shifting heavy hitters,0.3,0,Chameleon,online,0.974623447812278
+shifting heavy hitters,0.3,0,HitLRU,online,0.9802278185507428
+shifting heavy hitters,0.3,0,AdaptiveWindow,online,0.9803051025462572
+shifting heavy hitters,0.3,0,HARP,online,0.7794978957202734
+shifting heavy hitters,0.3,0,Imitation,learned,0.8586852796156156
+shifting heavy hitters,0.3,0,DAgger,learned,0.849558525126938
+shifting heavy hitters,0.3,0,Belady-Greedy (offline),offline,0.997188124358746
+shifting heavy hitters,0.3,0,Optimal (offline),offline,1.0

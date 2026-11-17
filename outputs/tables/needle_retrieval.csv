@@ -1,0 +1,187 @@
+nid,rep,depth,budget,policy,family,success
+0,0,0.1,1.0,Full cache,reference,True
+0,0,0.1,0.2,Random,online,False
+0,0,0.1,0.2,SlidingWindow,online,False
+0,0,0.1,0.2,StreamingLLM,online,False
+0,0,0.1,0.2,HeavyHitter-only,online,False
+0,0,0.1,0.2,H2O,online,False
+0,0,0.1,0.2,Hybrid,online,False
+0,0,0.1,0.2,LastAttention,online,False
+0,0,0.1,0.2,Chameleon,online,False
+0,0,0.1,0.2,HitLRU,online,False
+0,0,0.1,0.2,AdaptiveWindow,online,False
+0,0,0.1,0.2,HARP,online,False
+0,0,0.1,0.2,Imitation,learned,False
+0,0,0.1,0.2,DAgger,learned,False
+0,0,0.1,0.2,Belady-Greedy (offline),offline,False
+0,0,0.1,0.2,Optimal (offline),offline,False
+0,0,0.1,0.5,Random,online,False
+0,0,0.1,0.5,SlidingWindow,online,False
+0,0,0.1,0.5,StreamingLLM,online,False
+0,0,0.1,0.5,HeavyHitter-only,online,False
+0,0,0.1,0.5,H2O,online,False
+0,0,0.1,0.5,Hybrid,online,False
+0,0,0.1,0.5,LastAttention,online,False
+0,0,0.1,0.5,Chameleon,online,False
+0,0,0.1,0.5,HitLRU,online,False
+0,0,0.1,0.5,AdaptiveWindow,online,False
+0,0,0.1,0.5,HARP,online,False
+0,0,0.1,0.5,Imitation,learned,False
+0,0,0.1,0.5,DAgger,learned,False
+0,0,0.1,0.5,Belady-Greedy (offline),offline,False
+0,0,0.1,0.5,Optimal (offline),offline,False
+1,0,0.5,1.0,Full cache,reference,True
+1,0,0.5,0.2,Random,online,False
+1,0,0.5,0.2,SlidingWindow,online,False
+1,0,0.5,0.2,StreamingLLM,online,False
+1,0,0.5,0.2,HeavyHitter-only,online,False
+1,0,0.5,0.2,H2O,online,False
+1,0,0.5,0.2,Hybrid,online,False
+1,0,0.5,0.2,LastAttention,online,False
+1,0,0.5,0.2,Chameleon,online,False
+1,0,0.5,0.2,HitLRU,online,False
+1,0,0.5,0.2,AdaptiveWindow,online,False
+1,0,0.5,0.2,HARP,online,False
+1,0,0.5,0.2,Imitation,learned,False
+1,0,0.5,0.2,DAgger,learned,False
+1,0,0.5,0.2,Belady-Greedy (offline),offline,False
+1,0,0.5,0.2,Optimal (offline),offline,False
+1,0,0.5,0.5,Random,online,False
+1,0,0.5,0.5,SlidingWindow,online,False
+1,0,0.5,0.5,StreamingLLM,online,False
+1,0,0.5,0.5,HeavyHitter-only,online,False
+1,0,0.5,0.5,H2O,online,False
+1,0,0.5,0.5,Hybrid,online,False
+1,0,0.5,0.5,LastAttention,online,False
+1,0,0.5,0.5,Chameleon,online,False
+1,0,0.5,0.5,HitLRU,online,False
+1,0,0.5,0.5,AdaptiveWindow,online,False
+1,0,0.5,0.5,HARP,online,False
+1,0,0.5,0.5,Imitation,learned,False
+1,0,0.5,0.5,DAgger,learned,False
+1,0,0.5,0.5,Belady-Greedy (offline),offline,True
+1,0,0.5,0.5,Optimal (offline),offline,False
+2,0,0.9,1.0,Full cache,reference,True
+2,0,0.9,0.2,Random,online,False
+2,0,0.9,0.2,SlidingWindow,online,False
+2,0,0.9,0.2,StreamingLLM,online,True
+2,0,0.9,0.2,HeavyHitter-only,online,False
+2,0,0.9,0.2,H2O,online,False
+2,0,0.9,0.2,Hybrid,online,False
+2,0,0.9,0.2,LastAttention,online,False
+2,0,0.9,0.2,Chameleon,online,False
+2,0,0.9,0.2,HitLRU,online,False
+2,0,0.9,0.2,AdaptiveWindow,online,False
+2,0,0.9,0.2,HARP,online,False
+2,0,0.9,0.2,Imitation,learned,False
+2,0,0.9,0.2,DAgger,learned,False
+2,0,0.9,0.2,Belady-Greedy (offline),offline,False
+2,0,0.9,0.2,Optimal (offline),offline,False
+2,0,0.9,0.5,Random,online,False
+2,0,0.9,0.5,SlidingWindow,online,True
+2,0,0.9,0.5,StreamingLLM,online,True
+2,0,0.9,0.5,HeavyHitter-only,online,False
+2,0,0.9,0.5,H2O,online,True
+2,0,0.9,0.5,Hybrid,online,False
+2,0,0.9,0.5,LastAttention,online,True
+2,0,0.9,0.5,Chameleon,online,True
+2,0,0.9,0.5,HitLRU,online,True
+2,0,0.9,0.5,AdaptiveWindow,online,True
+2,0,0.9,0.5,HARP,online,False
+2,0,0.9,0.5,Imitation,learned,False
+2,0,0.9,0.5,DAgger,learned,False
+2,0,0.9,0.5,Belady-Greedy (offline),offline,True
+2,0,0.9,0.5,Optimal (offline),offline,True
+3,1,0.1,1.0,Full cache,reference,True
+3,1,0.1,0.2,Random,online,False
+3,1,0.1,0.2,SlidingWindow,online,False
+3,1,0.1,0.2,StreamingLLM,online,False
+3,1,0.1,0.2,HeavyHitter-only,online,False
+3,1,0.1,0.2,H2O,online,False
+3,1,0.1,0.2,Hybrid,online,False
+3,1,0.1,0.2,LastAttention,online,False
+3,1,0.1,0.2,Chameleon,online,False
+3,1,0.1,0.2,HitLRU,online,False
+3,1,0.1,0.2,AdaptiveWindow,online,False
+3,1,0.1,0.2,HARP,online,False
+3,1,0.1,0.2,Imitation,learned,False
+3,1,0.1,0.2,DAgger,learned,False
+3,1,0.1,0.2,Belady-Greedy (offline),offline,False
+3,1,0.1,0.2,Optimal (offline),offline,False
+3,1,0.1,0.5,Random,online,False
+3,1,0.1,0.5,SlidingWindow,online,False
+3,1,0.1,0.5,StreamingLLM,online,False
+3,1,0.1,0.5,HeavyHitter-only,online,False
+3,1,0.1,0.5,H2O,online,False
+3,1,0.1,0.5,Hybrid,online,False
+3,1,0.1,0.5,LastAttention,online,False
+3,1,0.1,0.5,Chameleon,online,False
+3,1,0.1,0.5,HitLRU,online,False
+3,1,0.1,0.5,AdaptiveWindow,online,False
+3,1,0.1,0.5,HARP,online,False
+3,1,0.1,0.5,Imitation,learned,False
+3,1,0.1,0.5,DAgger,learned,False
+3,1,0.1,0.5,Belady-Greedy (offline),offline,False
+3,1,0.1,0.5,Optimal (offline),offline,False
+4,1,0.5,1.0,Full cache,reference,True
+4,1,0.5,0.2,Random,online,False
+4,1,0.5,0.2,SlidingWindow,online,False
+4,1,0.5,0.2,StreamingLLM,online,False
+4,1,0.5,0.2,HeavyHitter-only,online,False
+4,1,0.5,0.2,H2O,online,False
+4,1,0.5,0.2,Hybrid,online,False
+4,1,0.5,0.2,LastAttention,online,False
+4,1,0.5,0.2,Chameleon,online,False
+4,1,0.5,0.2,HitLRU,online,False
+4,1,0.5,0.2,AdaptiveWindow,online,False
+4,1,0.5,0.2,HARP,online,False
+4,1,0.5,0.2,Imitation,learned,False
+4,1,0.5,0.2,DAgger,learned,False
+4,1,0.5,0.2,Belady-Greedy (offline),offline,False
+4,1,0.5,0.2,Optimal (offline),offline,False
+4,1,0.5,0.5,Random,online,False
+4,1,0.5,0.5,SlidingWindow,online,False
+4,1,0.5,0.5,StreamingLLM,online,False
+4,1,0.5,0.5,HeavyHitter-only,online,False
+4,1,0.5,0.5,H2O,online,False
+4,1,0.5,0.5,Hybrid,online,False
+4,1,0.5,0.5,LastAttention,online,False
+4,1,0.5,0.5,Chameleon,online,False
+4,1,0.5,0.5,HitLRU,online,False
+4,1,0.5,0.5,AdaptiveWindow,online,False
+4,1,0.5,0.5,HARP,online,False
+4,1,0.5,0.5,Imitation,learned,False
+4,1,0.5,0.5,DAgger,learned,False
+4,1,0.5,0.5,Belady-Greedy (offline),offline,False
+4,1,0.5,0.5,Optimal (offline),offline,False
+5,1,0.9,1.0,Full cache,reference,True
+5,1,0.9,0.2,Random,online,False
+5,1,0.9,0.2,SlidingWindow,online,False
+5,1,0.9,0.2,StreamingLLM,online,True
+5,1,0.9,0.2,HeavyHitter-only,online,False
+5,1,0.9,0.2,H2O,online,False
+5,1,0.9,0.2,Hybrid,online,False
+5,1,0.9,0.2,LastAttention,online,False
+5,1,0.9,0.2,Chameleon,online,False
+5,1,0.9,0.2,HitLRU,online,True
+5,1,0.9,0.2,AdaptiveWindow,online,True
+5,1,0.9,0.2,HARP,online,False
+5,1,0.9,0.2,Imitation,learned,False
+5,1,0.9,0.2,DAgger,learned,False
+5,1,0.9,0.2,Belady-Greedy (offline),offline,False
+5,1,0.9,0.2,Optimal (offline),offline,False
+5,1,0.9,0.5,Random,online,False
+5,1,0.9,0.5,SlidingWindow,online,False
+5,1,0.9,0.5,StreamingLLM,online,True
+5,1,0.9,0.5,HeavyHitter-only,online,False
+5,1,0.9,0.5,H2O,online,True
+5,1,0.9,0.5,Hybrid,online,False
+5,1,0.9,0.5,LastAttention,online,True
+5,1,0.9,0.5,Chameleon,online,True
+5,1,0.9,0.5,HitLRU,online,True
+5,1,0.9,0.5,AdaptiveWindow,online,True
+5,1,0.9,0.5,HARP,online,False
+5,1,0.9,0.5,Imitation,learned,False
+5,1,0.9,0.5,DAgger,learned,True
+5,1,0.9,0.5,Belady-Greedy (offline),offline,True
+5,1,0.9,0.5,Optimal (offline),offline,True

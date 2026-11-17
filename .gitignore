@@ -1,5 +1,6 @@
-# Outputs (regenerated from notebook)
-outputs/
+# Large/temporary outputs (keep outputs/tables and outputs/figures tracked for presentation)
+outputs/checkpoints/
+outputs/logs/
 results/
 
 # Cached attention data

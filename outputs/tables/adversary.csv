@@ -1,0 +1,15 @@
+policy,family,worst_ratio
+HitLRU,online,0.5498252096387859
+StreamingLLM,online,0.49683944973401895
+Random,online,0.5226580559662355
+LastAttention,online,0.7651822535374467
+HeavyHitter-only,online,0.3055671107422037
+SlidingWindow,online,0.7026680404923221
+H2O,online,0.5305864926957148
+Belady-Greedy (offline),offline,0.9616897060062412
+Hybrid,online,0.41035067400669534
+AdaptiveWindow,online,0.49683944973401895
+DAgger,learned,0.4989596442383507
+Imitation,learned,0.5557301726234049
+Chameleon,online,0.47520125755729054
+HARP,online,0.42920756184346953

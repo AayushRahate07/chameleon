@@ -1,5 +1,6 @@
 # ============================================================
-# KV-Cache Eviction Project Configuration
+# Chameleon KV-Cache Eviction Benchmark Configuration
+# Matches PRESETS in notebooks/kv_bench.ipynb
 # ============================================================
 
 model:
@@ -7,42 +8,67 @@ model:
   dtype: float32
   attn_implementation: eager
 
-experiment:
-  T: 512                          # tokens per sequence
-  seed: 0
+domains:
+  all_types: ["wikipedia", "code", "dialogue", "books", "science", "math"]
+  sinks_for_gap_breakdown: 4
 
-  # Attention-retained experiment
-  budgets: [0.1, 0.2, 0.3, 0.5]
-  n_seq: 3                        # sequences per text type
+fairness:
+  tune_budget: 8                   # max settings per policy, tuned strictly on DEV
+  verdict_min_gain: 0.0025         # CI lower bound threshold for a clear win
 
-  # Real-decoding perplexity
-  ppl_budgets: [0.1, 0.25]
-
-  # Needle-in-a-haystack
-  needle_depths: [0.1, 0.3, 0.5, 0.7, 0.9]
-  needle_budget: 0.2
-
-# Scaled experiment presets (section 10c+)
 presets:
   quick:
+    T: 256
+    text_types: ["wikipedia", "code", "dialogue"]
     n_seq: 4
-    n_ppl: 1
-    n_reps: 1
+    train_budgets: [0.1, 0.2, 0.3]
+    test_budgets: [0.1, 0.15, 0.2, 0.3]
+    n_splice: 1
+    ppl_seqs: 1
+    ppl_shift_seqs: 1
+    ppl_budgets: [0.15]
+    needle_depths: [0.1, 0.5, 0.9]
+    needle_reps: 2
+    needle_budgets: [0.2, 0.5]
+    stress_T: 256
+    stress_seeds: [0]
+    adv_T: 48
+    adv_k: 8
+    adv_iters: 30
+    adv_restarts: 1
+    dagger_rounds: 1
+
   full:
+    T: 512
+    text_types: ["wikipedia", "code", "dialogue", "books", "science", "math"]
+    n_seq: 24
+    train_budgets: [0.1, 0.2, 0.3, 0.5]
+    test_budgets: [0.05, 0.1, 0.15, 0.2, 0.3, 0.4, 0.5]
+    n_splice: 4
+    ppl_seqs: 8
+    ppl_shift_seqs: 2
+    ppl_budgets: [0.1, 0.15, 0.3]
+    needle_depths: [0.1, 0.3, 0.5, 0.7, 0.9]
+    needle_reps: 8
+    needle_budgets: [0.1, 0.2, 0.3, 0.5]
+    stress_T: 512
+    stress_seeds: [0, 1, 2]
+    stress_budgets: [0.1, 0.2, 0.3]
+    adv_T: 64
+    adv_k: 16
+    adv_iters: 150
+    adv_restarts: 3
+    dagger_rounds: 3
+
+  long:
+    T: 2048
+    text_types: ["wikipedia", "code", "dialogue", "books", "science", "math"]
     n_seq: 12
-    n_ppl: 4
-    n_reps: 3
-
-# Gauntlet settings
-gauntlet:
-  train_budgets: [0.1, 0.2, 0.3, 0.5]
-  test_budgets: [0.05, 0.1, 0.15, 0.2, 0.3, 0.4, 0.5]
-  run_long: false                 # 2T-length generalisation test
-
-# Chameleon hyperparameters (from theory, not tuned on test data)
-chameleon:
-  eta_scale: 1.0                  # eta = eta_scale * sqrt(8 ln N / T)
-  share: 5.0                      # fixed-share rate alpha = share / T
-  sinks: 4                        # attention sink tokens protected
-  grace: 0.0625                   # 1/16; newest grace*k tokens protected
-  q_frac: 0.25                    # loss evaluated on bottom q_frac*k tokens
+    train_budgets: [0.1, 0.2, 0.3]
+    test_budgets: [0.05, 0.1, 0.2, 0.3]
+    n_splice: 2
+    ppl_seqs: 3
+    ppl_shift_seqs: 1
+    ppl_budgets: [0.1, 0.2]
+    needle_reps: 4
+    needle_budgets: [0.1, 0.2, 0.3]
